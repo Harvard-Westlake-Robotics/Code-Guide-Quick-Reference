@@ -1,4 +1,9 @@
 [book]
 title = "1148 Code Guide and Quick Reference"
-authors = ["maxwaldman8"]
+authors = ["maxwaldman8 (original)", "Garret Morberg-Nguyen (maintainer)"]
 language = "en"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/Harvard-Westlake-Robotics/Code-Guide-Quick-Reference"
