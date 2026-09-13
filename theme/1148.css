@@ -1,0 +1,100 @@
+/* Team 1148 chrome over mdBook's stock themes. Primary #CE0F2C. */
+
+.light,
+html:not(.js) {
+    --links: #ce0f2c;
+    --sidebar-active: #ce0f2c;
+    --sidebar-header-border-color: #ce0f2c;
+    --search-mark-bg: #f8c9d0;
+    --searchresults-li-bg: #fdecee;
+    --footnote-highlight: #ce0f2c;
+    --blockquote-caution-color: #ce0f2c;
+    --copy-button-filter-hover: invert(14%) sepia(86%) saturate(4300%) hue-rotate(341deg) brightness(85%) contrast(105%);
+}
+
+.navy,
+.coal,
+.ayu {
+    --bg: #040406;
+    --fg: #f2f2f4;
+    --sidebar-bg: #0a090f;
+    --sidebar-fg: #e8e6ee;
+    --sidebar-non-existant: #6b6874;
+    --sidebar-active: #f03a52;
+    --sidebar-spacer: #1a1820;
+    --links: #f03a52;
+    --sidebar-header-border-color: #ce0f2c;
+    --icons: #9a96a4;
+    --icons-hover: #f2f2f4;
+    --theme-popup-bg: #0c0b12;
+    --theme-popup-border: #2a2833;
+    --theme-hover: #16141c;
+    --quote-bg: #121018;
+    --quote-border: #2a1820;
+    --table-border-color: #1c1a22;
+    --table-header-bg: #1a1216;
+    --table-alternate-bg: #0c0b12;
+    --search-mark-bg: #ce0f2c;
+    --searchresults-li-bg: #1a1216;
+    --footnote-highlight: #f03a52;
+    --blockquote-caution-color: #f03a52;
+    --inline-code-color: #f8c9d0;
+    --copy-button-filter-hover: invert(32%) sepia(74%) saturate(2800%) hue-rotate(334deg) brightness(98%) contrast(96%);
+}
+
+.rust {
+    --links: #ce0f2c;
+    --sidebar-active: #f0b7a0;
+    --sidebar-header-border-color: #ce0f2c;
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not(.js) {
+        --bg: #040406;
+        --fg: #f2f2f4;
+        --sidebar-bg: #0a090f;
+        --sidebar-fg: #e8e6ee;
+        --sidebar-active: #f03a52;
+        --links: #f03a52;
+        --sidebar-header-border-color: #ce0f2c;
+    }
+}
+
+#mdbook-menu-bar {
+    position: relative;
+}
+
+#mdbook-menu-bar::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    height: 4px;
+    background: #ce0f2c;
+    pointer-events: none;
+}
+
+.menu-title::before {
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-inline-end: 10px;
+    vertical-align: -6px;
+    background: url("../img/logo-1148.webp") center / contain no-repeat;
+}
+
+.navy .menu-title::before,
+.coal .menu-title::before,
+.ayu .menu-title::before {
+    background-image: url("../img/logo-1148-white.png");
+}
+
+#mdbook-sidebar .chapter li.active > a,
+#mdbook-sidebar .chapter li a:hover {
+    color: var(--sidebar-active);
+}
+
+.content a:hover {
+    color: var(--sidebar-active);
+}
