@@ -6,6 +6,7 @@ language = "en"
 [output.html]
 default-theme = "light"
 preferred-dark-theme = "navy"
+additional-css = ["theme/1148.css"]
 git-repository-url = "https://github.com/Harvard-Westlake-Robotics/Code-Guide-Quick-Reference"
 edit-url-template = "https://github.com/Harvard-Westlake-Robotics/Code-Guide-Quick-Reference/edit/main/{path}"
 site-url = "https://harvard-westlake-robotics.github.io/Code-Guide-Quick-Reference/"

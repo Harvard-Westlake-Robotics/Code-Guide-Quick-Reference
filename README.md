@@ -13,3 +13,5 @@ mdbook serve
 ```
 
 `mdbook serve` watches `src/` and opens a local preview (default http://localhost:3000). `mdbook build` writes static HTML to `book/` (gitignored).
+
+The Pages book uses `theme/1148.css`: team primary `#CE0F2C` on the stock mdBook chrome (sidebar, links, menu keyline). Dark picker themes (navy, coal, ayu) use the same red on `#040406`.
